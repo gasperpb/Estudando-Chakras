@@ -1,24 +1,13 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
+import { Container02 } from "../containers";
+import Container01 from "../containers/Container01";
 
 export default function Home() {
   return (
     <>
       <Box fontFamily="Montserrat" color="black">
-        <Flex height="133px" background="#8F2C48">
-          <Flex align="center" justify="center" width="100%">
-            <Text
-              fontSize="27px"
-              color="#fff000"
-              fontWeight="700"
-              textAlign="center"
-            >
-              ADQUIRA A <br />
-              GRAVAÇÃO NA
-              <br />
-              INTEGRA
-            </Text>
-          </Flex>
-        </Flex>
+        <Container01 />
+        <Container02 />
       </Box>
     </>
   );
