@@ -1,14 +1,11 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import { Container02 } from "../containers";
-import Container01 from "../containers/Container01";
-
-export default function Home() {
-  return (
-    <>
-      <Box fontFamily="Montserrat" color="black">
-        <Container01 />
-        <Container02 />
-      </Box>
-    </>
-  );
-}
+import { ColorModeScript } from "@chakra-ui/react";
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { App } from "./_app";
+ReactDOM.render(
+  <React.StrictMode>
+    <ColorModeScript />
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
